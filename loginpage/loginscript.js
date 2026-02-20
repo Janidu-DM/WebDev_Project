@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     if (loginButton) {
         loginButton.addEventListener("click", function() {
             // Redirect to the home page (home.html) if userdetail is true
-            window.location.href = "../homepage/homepage.html";
+            window.location.href = "../homepage/index.html";
         });
     }
 });
