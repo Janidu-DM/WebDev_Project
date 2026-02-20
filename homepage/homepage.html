@@ -1,12 +1,4 @@
-<?php
 
-session_start();
-    include("../loginpage/connection.php");
-    include("../loginpage/functions.php");
-
-    $user_data = check_login($con); 
-
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -67,7 +59,7 @@ session_start();
                 </ul>
                 <!-- My Account button -->
                 <div class="myAccount">
-                    <a href=".././myaccount/account.php"><button type="button" class="btnC"><i class="bi bi-person-circle"></i>&nbsp;&nbsp;My Account</button></a>
+                    <a href=".././myaccount/account.html"><button type="button" class="btnC"><i class="bi bi-person-circle"></i>&nbsp;&nbsp;My Account</button></a>
                 </div>
             </div>
         </nav>   
@@ -194,7 +186,7 @@ The rocks, discovered by NASA's Curiosity rover, are unusually rich in manganese
         
         <div class="contact-body">    
             <div class="contactForm">
-                <form action="connect.php" method="post" class="form-body">
+                <form action="connect.html" method="post" class="form-body">
                 <h1 class="sub-heading">Need Support !</h1>
                 <p class="para para2">Contact us for a quote , help to join the them.</p>
                 <input type="text" class="input" placeholder="your name" value="<?php echo $user_data['f_name'].' '.$user_data['l_name']?>">
